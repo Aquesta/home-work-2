@@ -10,7 +10,7 @@ def print_result(count_correct_answers, count_error_answers, number_questions):
 def game(dictionary):
     count_errors = 0
     count_correct = 0
-    for key in dictionary:
+    for key in dictionary.keys():
         answer = int(input(f'Введите год рождения {key}: '))
         if answer == dictionary[key]:
             count_correct += 1
